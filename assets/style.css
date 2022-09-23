@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: rgb(192, 183, 177)
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.nav-link {
+    color: white;
+    font-size: 15px;
+}
+
+.nav-link:hover{
+    color: peachpuff;
+}
+
+article h2{ 
+    visibility: hidden;
+}
+
+section{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation-name: blinka;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;  
+    text-align: center;
+}
+
+.bilden{
+    height: 250px;
+    width: 150px;
+    border-radius: 45%;
+    margin-left: 25%;
+    margin-top: 2px;
+}
+
+.ntibild{
+    width: 299px;
+    border-radius: 5%;
+}
+
+.cooplogo{
+    width: 50px;
+}
+.vapianologo{
+    width: 70px;
+}
+
+.list{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.list-cv{
+    text-align:left;
+    list-style-position: inside;
+}
+
+h3{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+}
+
+h4{
+    text-align: left;
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+@keyframes blinka {
+    0% {color: wheat;}
+    50% {color: rgb(255, 255, 255);}
+}
+
+form{
+    text-align: center;   
+}
+
+form > label {
+    font-weight: 700;
+}
+
+.knapp{
+   background-color: peachpuff;
+   color: white;
+   border: none;
+}
+
+.knapp:hover {
+    background-color: rgba(255, 218, 185, 0.7);
+}
+
+.icon{
+    padding:5px 0px 2px 0px;
+    color: white;
+}
+
+@media screen and (min-width: 768px){
+    
+    .nav-link {
+        color: white;
+        font-size: xx-large;
+    }
+
+    .bilden{
+    margin-left: 45%;
+     }
+
+     .ntibild{
+        display: block;
+        margin: auto;
+        width: 800px;
+        
+     }
+
+     .worktime{
+        font-size: 20px;
+     }
+
+     section{
+        font-size: 30px;
+    
+     }
+
+     .aboutme, p{
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 2%;
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+     }
+
+     aside{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+     }
+
+    .list-cv{
+        padding-left: 45%;
+        list-style-position: inside;
+        list-style: none;
+    
+    }
+    .list-cv::first-line{
+        color: white;
+    
+    }
+
+    h3{
+        text-align: center;
+        color: white;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    .icon:hover {
+        color: peachpuff;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin-left: 0%;
+    }
+
+
+}
